@@ -9,6 +9,7 @@
     const [method, url] = args
     this._method = method
     this._url = url
+    this._requestHeaders = {}
 
     return open.apply(this, args)
   }
